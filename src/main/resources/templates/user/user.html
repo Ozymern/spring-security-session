@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:replace="fragments/header :: head"></head>
+
+<body>
+<header th:replace="fragments/header :: header"></header>
+
+	<div class="container">
+		<h1 class="text-center">Usuario</h1>
+		<h6 sec:authentication="name"  class="text-center m-2"><h6>
+	</div>
+	
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>
